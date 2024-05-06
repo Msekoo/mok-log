@@ -23,11 +23,13 @@ const CONFIG = {
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
-  ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
-
+  link: "https://www.mokhub.com/",
+  since: 2024, // If leave this empty, current year will be used.
+  lang: "zh-CN", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  ogImageGenerateURL: "https://og-playground.vercel.app", // The link to generate OG image, don't end with a slash
+  seo: {
+    keywords: ["Blog", "Website", "Notion"],
+  },
   // notion configuration (required)
   notionConfig: {
     pageId: process.env.NOTION_PAGE_ID,
@@ -61,14 +63,14 @@ const CONFIG = {
     },
   },
   cusdis: {
-    enable: false,
+    enable: true,
     config: {
       host: "https://cusdis.com",
-      appid: "", // Embed Code -> data-app-id value
+      appid: "248474fa-f86f-4c43-8282-1763b8c844c2", // Embed Code -> data-app-id value
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 10, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
