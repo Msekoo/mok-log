@@ -1,10 +1,10 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "mokhubs",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    name: "mok hub",
+    image: "/avatar.jpeg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "frontend developer",
-    bio: "I develop everything using js.",
+    bio: "An unknown coder",
     email: "wensszzmmd10844@gmail.com",
     linkedin: "",
     github: "",
@@ -12,14 +12,14 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `mok-log`,
+      name: `mok-hub`,
       href: "https://github.com/Msekoo/mok-log",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "mok-log",
-    description: "welcome to mok-log!",
+    title: "mok hub",
+    description: "welcome to mok hub!",
   },
 
   // CONFIG configration (required)
